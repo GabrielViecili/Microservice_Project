@@ -10,67 +10,67 @@ import jakarta.persistence.Transient;
 @Entity
 @Table(name = "cambio")
 public class CambioEntity {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer id;
+	
+	private String origem;
+	private String destino;
+	private double fator;
+	
+	@Transient
+	private String ambiente;
+	@Transient
+	private double valorConvertido;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+	public Integer getId() {
+		return id;
+	}
 
-    private String origem;
-    private String destino;
-    private double fator;
+	public void setId(Integer id) {
+		this.id = id;
+	}
 
-    @Transient
-    private String ambiente;
-    @Transient
-    private double valorConvertido;
+	public String getOrigem() {
+		return origem;
+	}
 
-    public Integer getId() {
-        return id;
-    }
+	public void setOrigem(String origem) {
+		this.origem = origem;
+	}
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
+	public String getDestino() {
+		return destino;
+	}
 
-    public String getOrigem() {
-        return origem;
-    }
+	public void setDestino(String destino) {
+		this.destino = destino;
+	}
 
-    public void setOrigem(String origem) {
-        this.origem = origem;
-    }
+	public double getFator() {
+		return fator;
+	}
 
-    public String getDestino() {
-        return destino;
-    }
+	public void setFator(double fator) {
+		this.fator = fator;
+	}
 
-    public void setDestino(String destino) {
-        this.destino = destino;
-    }
+	public String getAmbiente() {
+		return ambiente;
+	}
 
-    public double getFator() {
-        return fator;
-    }
+	public void setAmbiente(String ambiente) {
+		this.ambiente = ambiente;
+	}
 
-    public void setFator(double fator) {
-        this.fator = fator;
-    }
+	public double getValorConvertido() {
+		return valorConvertido;
+	}
 
-    public String getAmbiente() {
-        return ambiente;
-    }
+	public void setValorConvertido(double valorConvertido) {
+		this.valorConvertido = valorConvertido;
+	}
 
-    public void setAmbiente(String ambiente) {
-        this.ambiente = ambiente;
-    }
-
-    public double getValorConvertido() {
-        return valorConvertido;
-    }
-
-    public void setValorConvertido(double valorConvertido) {
-        this.valorConvertido = valorConvertido;
-    }
-
-
+	
 }
