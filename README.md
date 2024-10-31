@@ -3,7 +3,7 @@
 Este projeto foi desenvolvido como parte da disciplina **Paradigma de Linguagem de Programação** do curso de **Ciência da Computação**.
 
 - **Professor**: Luciano Ferreto
-- **Integrantes**: Gabriel Viecili, Arthur Dezingrini, André Rien
+- **Aluno**: Gabriel Viecili
 
 ---
 
